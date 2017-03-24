@@ -6,7 +6,7 @@
                 <thead>
                     <tr>
                         <th width="50%">商品信息</th>
-                        <th>买家信息</th>
+                        <th>卖家信息</th>
                         <th>时间和金额</th>
                     </tr>
                 </thead>
@@ -16,16 +16,22 @@
                             <td class="tradeno">
                                 订单号:<xsl:value-of select="tradeno"/>
                             </td>
-                            <td class="time" colspan="2" align="right"><xsl:value-of select="time"/></td>
+                            <td class="time" colspan="2" align="right">
+                                <button class="J_op bt-op bt-op-{status}" data-status="{status}" type="button"></button>
+                            </td>
                         </tr>
                         <tr>
                             <td class="title"><xsl:value-of select="title"/></td>
                             <td class="buyer">
                                 &#215;<xsl:value-of select="totalcount"/>
                                 <br/>
-                                <xsl:value-of select="buyer"/>
+                                <xsl:value-of select="seller"/>
                             </td>
-                            <td class="price">&#165;<xsl:value-of select="totalfee"/></td>
+                            <td class="last">
+                                <em class="price">&#165;<xsl:value-of select="totalfee"/></em>
+                                <br/>
+                                <em class="status status-{status}"></em>
+                            </td>
                         </tr>
                     </xsl:for-each>
                 </tbody>

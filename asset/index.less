@@ -19,7 +19,7 @@
       font-size:12px;
     }
     .buyer,
-    .price,
+    .last,
     .title{
       padding-bottom: 15px;
       background-color: #fff;
@@ -29,12 +29,60 @@
       padding-left:5px;
       padding-top:5px;
     }
-    .price,
+    .last,
     .buyer{
       text-align: center;
     }
     .price{
+      font-style: normal;
       color:#f20;
     }
+
+  }
+  .status{
+    font-style: normal;
+    display: inline-block;
+    font-size:12px;
+  }
+  .status-0:before{
+    content:'待支付';
+    color:#f60;
+  }
+  .status-1:before{
+    content:'已支付';
+    color:#06f;
+  }
+  .status-2:before{
+    content:'已发货';
+    color:#06f;
+  }
+  .status-3:before{
+    content:'已完成';
+    color:#060;
+  }
+  .status-4:before{
+    content:'订单关闭';
+    color:#999;
+  }
+  .bt-op{
+    //display: none;
+    background-color: #fff;
+    border-style:none;
+    padding:2px 5px;
+    border:solid 1px #eee;
+    border-radius: 3px;
+    visibility: hidden;
+  }
+  .bt-op-0,
+  .bt-op-2{
+    visibility: visible;
+  }
+  .bt-op-0:before{
+    content:'去付款';
+    color:#f60;
+  }
+  .bt-op-2:before{
+    content:'确认收货';
+    color:#06f;
   }
  }

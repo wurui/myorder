@@ -11,16 +11,16 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-        <orders dsid="19388832323">
-            <attribute>124</attribute>
+        <orders>
             <i>
                 <title>好时（Hershey’s）好时kisses臻吻巧克力 浪漫满屋 京东限量定制礼盒 90g</title>
                 <detail>{}</detail>
                 <tradeno>test01</tradeno>
                 <totalfee>200.00</totalfee>
                 <totalcount>2</totalcount>
-                <buyer>gtwur</buyer>
+                <seller>gtwur</seller>
                 <time>2017-3-22 18:09:12</time>
+                <status>0</status>
             </i>
             <i>
                 <title>好时（Hershey’s）好时kisses臻吻巧克力 浪漫满屋 京东限量定制礼盒 90g</title>
@@ -28,8 +28,9 @@
                 <tradeno>test01</tradeno>
                 <totalfee>100.00</totalfee>
                 <totalcount>1</totalcount>
-                <buyer>nice_car</buyer>
+                <seller>nice_car</seller>
                 <time>2017-3-23 8:19:12</time>
+                <status>1</status>
             </i>
             <i>
                 <title>好时（Hershey’s）好时kisses臻吻巧克力 浪漫满屋 京东限量定制礼盒 90g</title>
@@ -37,8 +38,29 @@
                 <tradeno>test01</tradeno>
                 <totalcount>3</totalcount>
                 <totalfee>300.00</totalfee>
-                <buyer>nice-car</buyer>
+                <seller>nice-car</seller>
                 <time>2017-3-23 9:19:12</time>
+                <status>2</status>
+            </i>
+            <i>
+                <title>好时（Hershey’s）好时kisses臻吻巧克力 浪漫满屋 京东限量定制礼盒 90g</title>
+                <detail>{}</detail>
+                <tradeno>test01</tradeno>
+                <totalcount>3</totalcount>
+                <totalfee>300.00</totalfee>
+                <seller>nice-car</seller>
+                <time>2017-3-23 9:19:12</time>
+                <status>3</status>
+            </i>
+            <i>
+                <title>好时（Hershey’s）好时kisses臻吻巧克力 浪漫满屋 京东限量定制礼盒 90g</title>
+                <detail>{}</detail>
+                <tradeno>test01</tradeno>
+                <totalcount>3</totalcount>
+                <totalfee>300.00</totalfee>
+                <seller>nice-car</seller>
+                <time>2017-3-23 9:19:12</time>
+                <status>4</status>
             </i>
         </orders>
     </data>
