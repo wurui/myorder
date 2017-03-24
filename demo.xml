@@ -11,7 +11,8 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-        <orders>
+        <orders dsid="19388832323">
+            <attribute>124</attribute>
             <i>
                 <title>好时（Hershey’s）好时kisses臻吻巧克力 浪漫满屋 京东限量定制礼盒 90g</title>
                 <detail>{}</detail>

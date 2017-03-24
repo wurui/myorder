@@ -23,7 +23,7 @@
                             <td class="buyer">
                                 &#215;<xsl:value-of select="totalcount"/>
                                 <br/>
-                                <xsl:value-of select="uid"/>
+                                <xsl:value-of select="seller"/>
                             </td>
                             <td class="price">&#165;<xsl:value-of select="totalfee"/></td>
                         </tr>
