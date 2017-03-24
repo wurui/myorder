@@ -19,7 +19,7 @@
                 <tradeno>test01</tradeno>
                 <totalfee>200.00</totalfee>
                 <totalcount>2</totalcount>
-                <uid>gtwur</uid>
+                <buyer>gtwur</buyer>
                 <time>2017-3-22 18:09:12</time>
             </i>
             <i>
@@ -28,7 +28,7 @@
                 <tradeno>test01</tradeno>
                 <totalfee>100.00</totalfee>
                 <totalcount>1</totalcount>
-                <uid>nice_car</uid>
+                <buyer>nice_car</buyer>
                 <time>2017-3-23 8:19:12</time>
             </i>
             <i>
@@ -37,7 +37,7 @@
                 <tradeno>test01</tradeno>
                 <totalcount>3</totalcount>
                 <totalfee>300.00</totalfee>
-                <uid>nice-car</uid>
+                <buyer>nice-car</buyer>
                 <time>2017-3-23 9:19:12</time>
             </i>
         </orders>
