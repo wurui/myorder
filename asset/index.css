@@ -52,10 +52,14 @@
   color: #06f;
 }
 .oxmod-myorder .status-3:before {
-  content: '已完成';
-  color: #060;
+  content: '已收货';
+  color: #333;
 }
 .oxmod-myorder .status-4:before {
+  content: '已收货';
+  color: #333;
+}
+.oxmod-myorder .status-5:before {
   content: '订单关闭';
   color: #999;
 }
