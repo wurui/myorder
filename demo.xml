@@ -11,22 +11,34 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-            <order>
-        <title>
-            good screen
-        </title>
-        <detail>
-            watch
-        </detail>
-        <tradeno>
-            mobilephone
-        </tradeno>
-        <totalfee>
-            good car
-        </totalfee>
-        <uid>
-            nice car
-        </uid>
-    </order>
+        <orders>
+            <i>
+                <title>好时（Hershey’s）好时kisses臻吻巧克力 浪漫满屋 京东限量定制礼盒 90g</title>
+                <detail>{}</detail>
+                <tradeno>test01</tradeno>
+                <totalfee>200.00</totalfee>
+                <totalcount>2</totalcount>
+                <uid>gtwur</uid>
+                <time>2017-3-22 18:09:12</time>
+            </i>
+            <i>
+                <title>好时（Hershey’s）好时kisses臻吻巧克力 浪漫满屋 京东限量定制礼盒 90g</title>
+                <detail>{}</detail>
+                <tradeno>test01</tradeno>
+                <totalfee>100.00</totalfee>
+                <totalcount>1</totalcount>
+                <uid>nice_car</uid>
+                <time>2017-3-23 8:19:12</time>
+            </i>
+            <i>
+                <title>好时（Hershey’s）好时kisses臻吻巧克力 浪漫满屋 京东限量定制礼盒 90g</title>
+                <detail>{}</detail>
+                <tradeno>test01</tradeno>
+                <totalcount>3</totalcount>
+                <totalfee>300.00</totalfee>
+                <uid>nice-car</uid>
+                <time>2017-3-23 9:19:12</time>
+            </i>
+        </orders>
     </data>
 </root>

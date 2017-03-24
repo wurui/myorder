@@ -1,3 +1,35 @@
-.oxmod-myorder{
-/* CSS */
- }
+.oxmod-myorder {
+  /* CSS */
+}
+.oxmod-myorder .myorder {
+  width: 100%;
+  color: #555;
+  background-color: #f5f5f5;
+}
+.oxmod-myorder .myorder thead th {
+  background-color: #fff;
+}
+.oxmod-myorder .myorder .time,
+.oxmod-myorder .myorder .tradeno {
+  padding: 5px;
+  color: #06f;
+  font-size: 12px;
+}
+.oxmod-myorder .myorder .buyer,
+.oxmod-myorder .myorder .price,
+.oxmod-myorder .myorder .title {
+  padding-bottom: 15px;
+  background-color: #fff;
+}
+.oxmod-myorder .myorder .title {
+  font-size: 12px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.oxmod-myorder .myorder .price,
+.oxmod-myorder .myorder .buyer {
+  text-align: center;
+}
+.oxmod-myorder .myorder .price {
+  color: #f20;
+}
