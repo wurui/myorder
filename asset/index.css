@@ -8,6 +8,7 @@
 }
 .oxmod-myorder .myorder thead th {
   background-color: #fff;
+  font-weight: 300;
 }
 .oxmod-myorder .myorder .time,
 .oxmod-myorder .myorder .tradeno {

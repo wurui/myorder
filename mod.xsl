@@ -8,15 +8,15 @@
                 <thead>
                     <tr>
                         <th width="50%">商品信息</th>
-                        <th>卖家信息</th>
-                        <th>时间和金额</th>
+                        <th>数量</th>
+                        <th>金额</th>
                     </tr>
                 </thead>
                 <tbody>
                     <xsl:for-each select="data/orders/i">
                         <tr>
-                            <td class="_id">
-                                订单号:<xsl:value-of select="_id"/>
+                            <td class="tradeno">
+                                时间:<xsl:value-of select="time"/>
                             </td>
                             <td class="time" colspan="2" align="right">
                                 <button class="J_op bt-op bt-op-{status}" data-id="{_id}" data-status="{status}" type="button"></button>
