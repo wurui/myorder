@@ -13,7 +13,7 @@ define([], function () {
                 var tar = e.target;
                 var status = tar.getAttribute('data-status'),
                     param={
-                        tradeno:tar.getAttribute('data-tradeno')
+                        _id:tar.getAttribute('data-id')
                     }
                 switch (status - 0) {
                     case 0://去支付

@@ -15,11 +15,11 @@
                 <tbody>
                     <xsl:for-each select="data/orders/i">
                         <tr>
-                            <td class="tradeno">
-                                订单号:<xsl:value-of select="tradeno"/>
+                            <td class="_id">
+                                订单号:<xsl:value-of select="_id"/>
                             </td>
                             <td class="time" colspan="2" align="right">
-                                <button class="J_op bt-op bt-op-{status}" data-tradeno="{tradeno}" data-status="{status}" type="button"></button>
+                                <button class="J_op bt-op bt-op-{status}" data-id="{_id}" data-status="{status}" type="button"></button>
                             </td>
                         </tr>
                         <tr>
