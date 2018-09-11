@@ -25,7 +25,7 @@
                                 </td>                           
                             </tr>
                             <tr>
-                                <td class="title"><a href="LINK/detail"><xsl:value-of select="title"/></a></td>
+                                <td class="title"><a href="{LINK/detail}"><xsl:value-of select="title"/></a></td>
                                 <td class="buyer">
                                     &#215;<xsl:value-of select="totalcount"/>
                                     <br/>
