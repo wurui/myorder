@@ -20,15 +20,12 @@
                     <tbody>
                         <xsl:for-each select="data/orders/i">
                             <tr>
-                                <td class="tradeno">
-                                    时间:<xsl:value-of select="time/fmt_cn"/>
-                                </td>
-                                <td class="time" colspan="2" align="right">
-                                    <button class="J_op bt-op bt-op-{status}" data-id="{_id}" data-status="{status}" type="button"></button>
-                                </td>
+                                <td class="tradeno" colspan="2">
+                                    <xsl:value-of select="time/fmt_cn"/>
+                                </td>                           
                             </tr>
                             <tr>
-                                <td class="title"><xsl:value-of select="title"/></td>
+                                <td class="title"><a href="LINK/detail"><xsl:value-of select="title"/></a></td>
                                 <td class="buyer">
                                     &#215;<xsl:value-of select="totalcount"/>
                                     <br/>

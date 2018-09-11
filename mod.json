@@ -1,6 +1,17 @@
 {
   "name": "myorder",
-  "version": "0.0.1",
-  "apiDependencies": ["orders"]
+  "version": "0.2.2",
+  "apiDependencies": [
+  	{
+  		"name":"orders",
+  		"selector":"myorder",
+  		"LINK":[
+  			{
+  				"name":"detail",
+  				"title":"订单详情"
+  			}
+  		]
+  	}
+  ]
 }
 
