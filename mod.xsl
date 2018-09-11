@@ -1,9 +1,11 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:oxm="https://www.openxsl.com">
     <xsl:template match="/root" name="wurui.myorder">
-        <xsl:param name="pay_url"/>
-        <xsl:param name="confirm_url" oxm:comment="确认收货页面url"/>
         <!-- className 'J_OXMod' required  -->
-        <div class="J_OXMod oxmod-myorder" ox-mod="myorder" data-payurl="{$pay_url}" data-confirmurl="{$confirm_url}">
+        <div class="J_OXMod oxmod-myorder" ox-mod="myorder">
+            
+            <xsl:variable name="dsid" select="substring(data/orders/attribute::ADAPTERID,2)"/>
+
+            
             <table class="myorder" cellpadding="0" cellspacing="0">
                 <thead>
                     <tr>
@@ -32,7 +34,22 @@
                             <td class="last">
                                 <em class="price">&#165;<xsl:value-of select="totalfee"/></em>
                                 <br/>
-                                <em class="status status-{status}"></em>
+                                <span class="status-desc">
+                                    <xsl:choose>
+                                        <xsl:when test="actions/complete">已完成</xsl:when>
+                                        <xsl:when test="actions/close">已关闭</xsl:when>
+                                        <xsl:when test="actions/refund/success">已退款</xsl:when>
+                                        <xsl:when test="actions/refund/complete">退款完成</xsl:when>
+                                        <xsl:when test="actions/refund/accept">商家退款中</xsl:when>
+                                        <xsl:when test="actions/refund/apply">退款中</xsl:when>
+                                          
+                                        <xsl:when test="actions/accept">已接单</xsl:when>
+                                        <xsl:when test="actions/pay">已付款</xsl:when>
+                                        <xsl:otherwise>
+                                            <a href="http://pay.openxsl.com/p/pay/custom?dsname=orders&amp;dsid={$dsid}&amp;oid={_id}">付款</a>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </span>
                             </td>
                         </tr>
                     </xsl:for-each>
