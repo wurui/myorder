@@ -21,7 +21,7 @@
                         <xsl:for-each select="data/orders/i">
                             <tr>
                                 <td class="tradeno">
-                                    时间:<xsl:value-of select="time"/>
+                                    时间:<xsl:value-of select="time/fmt_cn"/>
                                 </td>
                                 <td class="time" colspan="2" align="right">
                                     <button class="J_op bt-op bt-op-{status}" data-id="{_id}" data-status="{status}" type="button"></button>
