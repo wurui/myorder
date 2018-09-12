@@ -9,6 +9,7 @@
                 <div class="nodata">暂无订单</div>
             </xsl:if>
             <xsl:if test="count(data/orders/i) &gt; 0">
+
                 <table class="myorder" cellpadding="0" cellspacing="0">
                     <thead>
                         <tr>
@@ -19,6 +20,21 @@
                     </thead>
                     <tbody>
                         <xsl:for-each select="data/orders/i">
+                            <xsl:variable name="status-desc">
+                                <xsl:choose>
+                                    <xsl:when test="actions/refund/success">退款成功</xsl:when>
+                                    <xsl:when test="actions/refund/complete/fmt_cn">退款完成</xsl:when>
+                                    <xsl:when test="actions/refund/accept/fmt_cn">退款处理中</xsl:when>
+                                    <xsl:when test="actions/refund/apply/fmt_cn">退款中</xsl:when>
+                                    <xsl:when test="actions/close/fmt_cn">订单已关闭</xsl:when>
+                                    <xsl:when test="actions/complete/fmt_cn">订单已完成</xsl:when>
+                                    <xsl:when test="actions/deliver/time/fmt_cn">已发货</xsl:when>
+                                    <xsl:when test="actions/pay/time/fmt_cn">已付款</xsl:when>
+                                    <xsl:when test="actions/accept/fmt_cn">商家已接单</xsl:when>
+                                    <xsl:when test="time/fmt_cn">待支付</xsl:when>
+                                    <xsl:otherwise></xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:variable>
                             <tr>
                                 <td class="tradeno" colspan="2">
                                     <xsl:value-of select="time/fmt_cn"/>
@@ -36,17 +52,9 @@
                                     <br/>
                                     <span class="status-desc">
                                         <xsl:choose>
-                                            <xsl:when test="actions/complete">已完成</xsl:when>
-                                            <xsl:when test="actions/close">已关闭</xsl:when>
-                                            <xsl:when test="actions/refund/success">已退款</xsl:when>
-                                            <xsl:when test="actions/refund/complete">退款完成</xsl:when>
-                                            <xsl:when test="actions/refund/accept">商家退款中</xsl:when>
-                                            <xsl:when test="actions/refund/apply">退款中</xsl:when>
-                                              
-                                            <xsl:when test="actions/accept">已接单</xsl:when>
-                                            <xsl:when test="actions/pay">已付款</xsl:when>
+                                            <xsl:when test="$status-desc = '待支付'"><a href="http://pay.openxsl.com/p/pay/custom?dsname=orders&amp;dsid={$dsid}&amp;oid={_id}">付款</a></xsl:when>
                                             <xsl:otherwise>
-                                                <a href="http://pay.openxsl.com/p/pay/custom?dsname=orders&amp;dsid={$dsid}&amp;oid={_id}">付款</a>
+                                                <xsl:value-of select="$status-desc"/>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </span>
