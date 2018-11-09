@@ -5,10 +5,10 @@
             
             <xsl:variable name="dsid" select="substring(data/orders/attribute::ADAPTERID,2)"/>
 
-            <xsl:if test="count(data/orders/i) = 0">
+            <xsl:if test="count(data/ecom-orders/i) = 0">
                 <div class="nodata">暂无订单</div>
             </xsl:if>
-            <xsl:if test="count(data/orders/i) &gt; 0">
+            <xsl:if test="count(data/ecom-orders/i) &gt; 0">
 
                 <table class="myorder" cellpadding="0" cellspacing="0">
                     <thead>
@@ -19,7 +19,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <xsl:for-each select="data/orders/i">
+                        <xsl:for-each select="data/ecom-orders/i">
                             <xsl:variable name="status-desc">
                                 <xsl:choose>
                                     <xsl:when test="actions/refund/success">退款成功</xsl:when>

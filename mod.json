@@ -3,8 +3,8 @@
   "version": "0.2.2",
   "apiDependencies": [
   	{
-  		"name":"orders",
-  		"selector":"myorder",
+  		"name":"ecom-orders",
+  		"selector":"buyer",
   		"LINK":[
   			{
   				"name":"detail",

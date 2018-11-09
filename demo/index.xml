@@ -11,7 +11,7 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-        <orders ADAPTERID="25b95089d5d94e7147cc08da5">
+        <ecom-orders ADAPTERID="25b95089d5d94e7147cc08da5">
             
             <i>
                 <title>日式三文鱼刺身200gX3</title>
@@ -180,6 +180,6 @@
             </i>
           
         
-        </orders>
+        </ecom-orders>
     </data>
 </root>
